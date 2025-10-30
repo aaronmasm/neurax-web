@@ -1,9 +1,33 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* =============================
+   🎨 NeuraX Color Palette
+============================= */
+@theme {
+  /* Corporate Colors */
+  --color-neurax-violet: oklch(
+    0.5908 0.25458 296.0935
+  ); /* Electric Violet #9146ff */
+  --color-neurax-lavender: oklch(
+    0.7424 0.1575 300.38
+  ); /* Light Lavender #bc92ff */
+  --color-neurax-charcoal: oklch(0.2686 0 0); /* Charcoal #262626 */
+  --color-neurax-smoke: oklch(0.9581 0 0); /* White Smoke #f1f1f1 */
+
+  /* Visual Colors */
+  --color-neurax-cyan: oklch(0.9054 0.15455 194.769); /* Cyan #00ffff */
+  --color-neurax-cyanSoft: oklch(0.8854 0.1834 163.48); /* Cyan Soft #2afeb7 */
+  --color-neurax-magenta: oklch(0.6791 0.2349 357.38); /* Magenta #ff4099 */
+  --color-neurax-yellow: oklch(0.968 0.211 109.77); /* Yellow #ffff00 */
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  /* NeuraX Typeface */
+  --font-primary: var(--font-inter); /* Titles and headings */
+  --font-secundary: var(--font-roboto); /* Body text */
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -42,6 +66,10 @@
 }
 
 :root {
+  /* Fallback for titles: prioritize fonts with good presence */
+  --font-inter: ui-sans-serif, system-ui, sans-serif;
+  /* Fallback for body: prioritizes readability in long texts */
+  --font-roboto: -apple-system, "Segoe UI", Arial, sans-serif;
   --radius: 0.625rem;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
