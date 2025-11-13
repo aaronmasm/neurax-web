@@ -89,7 +89,7 @@ export default function Navbar() {
           <Link target="_blank" href="https://wa.me/51933488855">
             <Button
               variant="ghost"
-              className="hover:bg-neurax-violet hover:text-neurax-cyanSoft text-neurax-cyanSoft ml-4 font-medium transition-colors"
+              className="hover:bg-neurax-violet hover:text-neurax-cyanSoft text-neurax-cyanSoft ml-4 font-semibold transition-colors"
             >
               <IconBrandWhatsapp />
               Chat on WhatsApp
@@ -155,7 +155,7 @@ export default function Navbar() {
                 href="https://wa.me/51933488855"
                 onClick={() => setOpen(false)}
               >
-                <Button className="bg-neurax-cyanSoft text-neurax-charcoal mt-2 w-full transition-colors">
+                <Button className="bg-neurax-violet text-neurax-cyanSoft mt-2 w-full font-semibold transition-colors">
                   <IconBrandWhatsapp /> Chat on WhatsApp
                 </Button>
               </Link>
