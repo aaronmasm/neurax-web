@@ -14,7 +14,6 @@
   ); /* Light Lavender #bc92ff */
   --color-neurax-charcoal: oklch(0.2686 0 0); /* Charcoal #262626 */
   --color-neurax-smoke: oklch(0.9581 0 0); /* White Smoke #f1f1f1 */
-
   /* Visual Colors */
   --color-neurax-cyan: oklch(0.9054 0.15455 194.769); /* Cyan #00ffff */
   --color-neurax-cyanSoft: oklch(0.8854 0.1834 163.48); /* Cyan Soft #2afeb7 */
@@ -142,7 +141,13 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
   }
 }

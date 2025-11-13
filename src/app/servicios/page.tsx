@@ -1,7 +1,7 @@
 export default function ServicesPage() {
   return (
     <>
-      <h1>ServicesPage</h1>;
+      <h1>ServicesPage</h1>
     </>
   );
 }
